@@ -30,13 +30,28 @@ nav{
 nav img{
     width:7.5rem;
     border-radius: 10px;
-    border:rgb(33, 8, 8) solid 2px;
-    transition:.4s;
 }
 
-nav img:hover{
+nav img:hover {
+    animation-name:rotate;
+    animation-duration: .9s;
+    animation-direction:reverse;
     transform: translatey(-2px);
 }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*nav img:hover{
+
+}*/
 
 .nav-links {
     flex:1;
@@ -106,7 +121,6 @@ nav img:hover{
 }
 
 .title h1:hover::before{
-    transform: scaleX(0.5);
+    transform: scaleX(0.5) translateY(8px);
     background-color: rgba(156, 11, 28, 0.8);
-    transform:translateY(2px);
 }
