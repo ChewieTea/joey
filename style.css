@@ -36,7 +36,6 @@ nav img:hover {
     animation-name:rotate;
     animation-duration: .9s;
     animation-direction:reverse;
-    transform: translatey(-2px);
 }
 
 @keyframes rotate {
@@ -124,3 +123,6 @@ nav img:hover {
     transform: scaleX(0.5) translateY(8px);
     background-color: rgba(156, 11, 28, 0.8);
 }
+
+/* ### Content ### */
+
